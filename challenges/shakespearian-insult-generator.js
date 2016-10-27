@@ -35,8 +35,8 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
    return insultString;
  }
 
-function generateInsult() {
+function generateNamedInsult() {
   var userInput = prompt('Please name a person:');
   $("h1").append('Why ' + userInput + ', you ' + first_word[Math.round(Math.random()*50)] + ' ' + second_word[Math.round(Math.random()*50)]+ ' ' + third_word[Math.round(Math.random()*50)] + '!');
 };
-generateInsult();
+generateNamedInsult();
