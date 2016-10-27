@@ -21,3 +21,16 @@
 */
 
 // YOUR CODE HERE
+
+function isPalindrome(s) {
+  s = s.replace(/ /g,"");
+  s = s.replace(/[^a-zA-Z ]/g, "");
+  s = s.toLowerCase();
+  var sreverse = s.split("").reverse().join("");
+  sreverse = sreverse.toLowerCase();
+  if (s === sreverse) {
+    return true;
+  } else {
+    return false;
+  }
+}
